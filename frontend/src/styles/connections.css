@@ -1,0 +1,415 @@
+/* ==========================================================================
+   CONNECTIONS PAGE (Teal + Mint-White + Charcoal + Grey Harmony)
+   ========================================================================== */
+
+.connections-page {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 38px clamp(20px, 4vw, 50px) 70px;
+    color: var(--pb-text-light);
+}
+
+.connections-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.connections-eyebrow {
+    margin: 0 0 8px;
+    color: #43c17c;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.connections-header h1 {
+    margin: 0 0 8px;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    color: var(--pb-text-light);
+}
+
+.connections-header p {
+    margin: 0;
+    color: var(--pb-text-silver);
+    font-size: 14px;
+}
+
+.connections-explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background: var(--pb-teal-primary);
+    color: #01211c;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 750;
+    cursor: pointer;
+    box-shadow: 0 4px 14px var(--pb-teal-glow);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.connections-explore-btn:hover {
+    background: var(--pb-teal-hover);
+    color: #01211c;
+    transform: translateY(-2px);
+}
+
+.connections-explore-btn svg {
+    width: 17px;
+    height: 17px;
+}
+
+/* Main connections panel */
+.connections-panel {
+    background: var(--pb-glass-bg);
+    border: 1px solid var(--pb-glass-border);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.connections-tabs {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    padding: 0 32px;
+    border-bottom: 1px solid var(--pb-glass-border);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Connections section toolbar */
+.connections-toolbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    padding: 32px 48px 24px;
+    box-sizing: border-box;
+}
+
+.connections-section-heading {
+    min-width: 0;
+}
+
+.connections-section-heading h2 {
+    margin: 0 0 12px;
+    color: var(--pb-text-light);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.connections-section-heading p {
+    margin: 0;
+    color: var(--pb-text-silver);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.connections-tab {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 16px;
+    background: transparent;
+    border: none;
+    color: var(--pb-text-silver);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.connections-tab:hover {
+    color: var(--pb-white);
+}
+
+.connections-tab.active {
+    color: #43c17c;
+    font-weight: 750;
+}
+
+.connections-tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 12px;
+    right: 12px;
+    height: 3px;
+    background: #43c17c;
+    border-radius: 4px;
+}
+
+.tab-badge {
+    padding: 2px 7px;
+    border-radius: 12px;
+    background: rgba(67, 193, 124, 0.15);
+    color: #43c17c;
+    font-size: 11px;
+}
+
+.connections-subheading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 36px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.connections-subheading h2 {
+    margin: 0 0 4px;
+    color: var(--pb-text-light);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.connections-subheading p {
+    margin: 0;
+    color: var(--pb-text-silver);
+    font-size: 13px;
+}
+
+.connections-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.connections-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 42px;
+    padding: 0 14px;
+    background: #ffffff;
+    border: 1px solid var(--pb-card-border);
+    border-radius: 11px;
+}
+
+.connections-search svg {
+    width: 17px;
+    height: 17px;
+    color: var(--pb-teal-dark);
+}
+
+.connections-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--pb-text-dark);
+    font-family: inherit;
+    font-size: 13px;
+    min-width: 180px;
+}
+
+.connections-search input::placeholder {
+    color: #708678;
+}
+
+.connections-search button {
+    background: transparent;
+    border: none;
+    color: #708678;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+.connections-sort-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0 14px;
+    background: #ffffff;
+    border: 1px solid var(--pb-card-border);
+    border-radius: 11px;
+}
+
+.connections-sort-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--pb-teal-dark);
+}
+
+.connections-sort {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--pb-text-dark);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.connections-content {
+    padding: 20px 36px 36px;
+    box-sizing: border-box;
+}
+
+.connections-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.connection-card-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.connection-card-wrapper .explore-player-card {
+    flex: 1;
+}
+
+.connection-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.connection-primary-btn {
+    flex: 1;
+    padding: 10px 14px;
+    background: #206b4b;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.connection-primary-btn:hover:not(:disabled) {
+    background: #17573b;
+}
+
+.connection-secondary-btn {
+    flex: 1;
+    padding: 10px 14px;
+    background: #ffffff;
+    color: var(--pb-text-title);
+    border: 1px solid #d4e8d9;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.connection-secondary-btn:hover:not(:disabled) {
+    background: #f0f7f2;
+}
+
+.connection-danger-btn {
+    width: 100%;
+    padding: 10px 14px;
+    background: rgba(220, 38, 38, 0.08);
+    color: #dc2626;
+    border: 1px solid rgba(220, 38, 38, 0.22);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.connection-danger-btn:hover:not(:disabled) {
+    background: rgba(220, 38, 38, 0.16);
+}
+
+.connections-empty {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.connections-empty h3 {
+    margin: 0 0 6px;
+    color: var(--pb-text-light);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.connections-empty p {
+    margin: 0 0 16px;
+    color: var(--pb-text-silver);
+    font-size: 14px;
+}
+
+.connections-primary-btn {
+    display: inline-flex;
+    padding: 10px 20px;
+    background: var(--pb-teal-primary);
+    color: #01211c;
+    border: none;
+    border-radius: 10px;
+    font-weight: 750;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.connections-feedback {
+    padding: 12px 18px;
+    margin: 0 28px 16px;
+    border-radius: 10px;
+    background: rgba(67, 193, 124, 0.12);
+    border: 1px solid var(--pb-teal-border);
+    color: #43c17c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.connections-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 60px 20px;
+    color: var(--pb-text-silver);
+}
+
+.connections-feedback.error {
+    background: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.25);
+    color: #fca5a5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.connections-feedback.error button {
+    padding: 4px 12px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+/* Connections Responsive Design */
+@media (max-width: 768px) {
+    .connections-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}

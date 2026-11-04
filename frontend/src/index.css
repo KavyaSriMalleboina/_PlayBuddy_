@@ -1,0 +1,6 @@
+/* ==========================================================================
+   PLAYBUDDY - MAIN STYLESHEET ENTRY POINT
+   Global styles are loaded here. Page-specific styles are loaded by individual pages.
+   ========================================================================== */
+
+@import "./styles/global.css";

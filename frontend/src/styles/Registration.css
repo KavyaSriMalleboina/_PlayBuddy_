@@ -1,0 +1,352 @@
+/* ==========================================================================
+   LOGIN & REGISTRATION PAGES (Hero Card Mixture)
+   ========================================================================== */
+
+.login-page,
+.registration-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background:
+        radial-gradient(circle at 15% 15%, rgba(67, 193, 124, 0.12), transparent 35%),
+        radial-gradient(circle at 85% 85%, rgba(67, 193, 124, 0.08), transparent 35%),
+        #01211c;
+    color: var(--pb-text-light);
+    box-sizing: border-box;
+}
+
+.registration-page {
+    align-items: flex-start;
+}
+
+.login-container,
+.registration-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login-container {
+    max-width: 450px;
+    padding: 42px 40px;
+    border: 1px solid var(--pb-card-border);
+    border-radius: 28px;
+    background: var(--pb-card-hero-gradient);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+    color: var(--pb-text-dark);
+}
+
+.registration-container {
+    max-width: 800px;
+}
+
+/* Brand inside Auth */
+.login-brand,
+.registration-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.login-brand-icon,
+.registration-brand-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.login-brand-text,
+.registration-brand-text {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    line-height: 1;
+}
+
+.login-brand-text .brand-play,
+.registration-brand-text span {
+    color: var(--pb-text-dark);
+}
+
+.login-brand-text .brand-buddy,
+.registration-brand-text strong {
+    color: #278653;
+}
+
+.login-heading,
+.registration-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-eyebrow,
+.registration-eyebrow {
+    margin: 0 0 10px;
+    color: #278653;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.login-heading h2,
+.registration-heading h2 {
+    margin: 0 0 8px;
+    color: var(--pb-text-dark);
+    font-size: clamp(26px, 3.5vw, 34px);
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+.login-heading > p,
+.registration-heading > p {
+    margin: 0;
+    color: var(--pb-text-grey);
+    font-size: 14px;
+}
+
+/* Registration Form Card */
+.registration-page .credentials.registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 38px 42px;
+    border: 1px solid var(--pb-card-border);
+    border-radius: 28px;
+    background: var(--pb-card-hero-gradient);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+    color: var(--pb-text-dark);
+}
+
+.registration-section {
+    margin-bottom: 28px;
+}
+
+.registration-section + .registration-section {
+    padding-top: 26px;
+    border-top: 1px solid rgba(32, 107, 75, 0.14);
+}
+
+.registration-section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.registration-step {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: var(--pb-teal-light);
+    color: var(--pb-teal-dark);
+    border: 1px solid #d0e8d8;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.registration-section-heading h3 {
+    margin: 0 0 3px;
+    color: var(--pb-text-dark);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.registration-section-heading p {
+    margin: 0;
+    color: var(--pb-text-grey);
+    font-size: 13px;
+}
+
+.registration-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.registration-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.registration-field label {
+    color: var(--pb-text-title);
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.registration-field input,
+.registration-field select {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border: 1.5px solid #d0e3d6;
+    border-radius: 12px;
+    background: #ffffff;
+    color: var(--pb-text-dark);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.registration-field input::placeholder {
+    color: #8a9e92;
+}
+
+.registration-field input:focus,
+.registration-field select:focus {
+    border-color: #278653;
+    box-shadow: 0 0 0 3px rgba(39, 134, 83, 0.15);
+}
+
+.registration-field.registration-full-width {
+    grid-column: 1 / -1;
+}
+
+.registration-sports-section {
+    margin-bottom: 28px;
+}
+
+.registration-sports-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.registration-sports-note {
+    margin: 12px 0 0;
+    color: var(--pb-text-grey);
+    font-size: 12px;
+}
+
+.registration-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    color: var(--pb-text-silver);
+    font-size: 13px;
+}
+
+.registration-footer span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #38a66a;
+}
+
+.registration-submit-btn span {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+}
+
+.registration-submit-btn:hover span {
+    transform: translateX(4px);
+}
+
+/* Sports selection grid in Registration */
+.registration-sports-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.registration-sport-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    background: #ffffff;
+    border: 1px solid #dcece1;
+    border-radius: 12px;
+}
+
+.registration-sport-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--pb-text-title);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.registration-sport-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #206b4b;
+    cursor: pointer;
+}
+
+.registration-sport-row select {
+    padding: 6px 10px;
+    background: #f8fcf8;
+    border: 1px solid #d0e3d6;
+    border-radius: 8px;
+    color: var(--pb-text-dark);
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.registration-submit-area {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.registration-submit-btn {
+    width: 100%;
+    min-height: 50px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #206b4b;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 750;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(32, 107, 75, 0.2);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.registration-submit-btn:hover {
+    background: #17573b;
+    transform: translateY(-2px);
+}
+
+.registration-submit-area > p {
+    margin: 18px 0 0;
+    color: var(--pb-text-grey);
+    font-size: 14px;
+}
+
+.registration-submit-area a {
+    color: #206b4b;
+    font-weight: 750;
+}
+
+
+
+/* Registration Responsive Design */
+@media (max-width: 768px) {
+    .registration-grid,
+    .registration-sports-grid {
+        grid-template-columns: 1fr;
+    }
+}
