@@ -17,6 +17,7 @@ from models.connections import Connection
 from models.meetups import Meetup
 from models.meetup_participants import MeetupParticipant
 from models.meetup_invitations import MeetupInvitation
+from models.reviews import Review
 
 from routes.auth import router as auth_router
 from routes.user import router as current
@@ -28,6 +29,7 @@ from routes.meetup_invitations import router as meetup_invitation_router
 from routes.meetup_management import router as meetup_management_router
 from routes.meetup_outcomes import router as meetup_outcomes_router
 from routes.meetup_history import router as meetup_history_router
+from routes.reviews import router as review_router
 
 
 Base.metadata.create_all(bind=engine)
@@ -95,3 +97,4 @@ app.include_router(meetup_outcomes_router)
 app.include_router(meetup_history_router)
 app.include_router(meetup_router)
 app.include_router(meetup_management_router)
+app.include_router(review_router)

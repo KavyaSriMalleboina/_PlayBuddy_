@@ -96,15 +96,18 @@ def finalize_meetup(
     meetup.finalized_at = now
 
     if meetup.status == "completed_success":
-        db.query(User).filter(
-            User.id == meetup.host_id
-        ).update(
-            {
-                User.meetup_count:
-                    User.meetup_count + 1
-            },
-            synchronize_session=False
-        )
+
+        for participant in participants:
+
+            db.query(User).filter(
+                User.id == participant.user_id
+            ).update(
+                {
+                    User.meetup_count:
+                        User.meetup_count + 1
+                },
+                synchronize_session=False
+            )
 
     db.flush()
 

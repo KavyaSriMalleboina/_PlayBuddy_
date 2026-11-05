@@ -128,7 +128,7 @@ function Explore() {
 
     // Navigate to public player profile
     function openPlayerProfile(player) {
-        navigate(`players/${player.id}`);
+        navigate(`/players/${player.id}`);
     }
 
     return (
