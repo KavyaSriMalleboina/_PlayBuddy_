@@ -110,79 +110,81 @@ function Registration() {
             <div className="registration-container">
 
                 {/* Branding */}
-                <div className="registration-brand">
 
-                    <div className="registration-brand-icon">
-                        {/* Replace with your actual PlayBuddy logo if available */}
-                        <svg
-                            viewBox="0 0 64 64"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                        >
-                            <rect
-                                width="64"
-                                height="64"
-                                rx="18"
-                                fill="#103D2C"
-                            />
-
-                            <circle
-                                cx="24"
-                                cy="22"
-                                r="7"
-                                fill="#43C17C"
-                            />
-
-                            <circle
-                                cx="41"
-                                cy="22"
-                                r="7"
-                                fill="#F3FAF4"
-                            />
-
-                            <path
-                                d="M12 48C12 38.5 17.5 33 25 33C32.5 33 37 38.5 37 48"
-                                stroke="#43C17C"
-                                strokeWidth="6"
-                                strokeLinecap="round"
-                            />
-
-                            <path
-                                d="M29 48C29 38.5 34.5 33 42 33C46 33 49.5 35 52 39"
-                                stroke="#F3FAF4"
-                                strokeWidth="6"
-                                strokeLinecap="round"
-                            />
-                        </svg>
-                    </div>
-
-                    <h1 className="registration-brand-text">
-                        <span>Play</span><strong>Buddy</strong>
-                    </h1>
-
-                </div>
-
-                {/* Page heading */}
-                <div className="registration-heading">
-
-                    <p className="registration-eyebrow">
-                        FIND YOUR PEOPLE
-                    </p>
-
-                    <h2>Create your account</h2>
-
-                    <p>
-                        Meet players. Discover sports. Get out and play.
-                    </p>
-
-                </div>
-
-                {/* Registration form */}
                 <form
                     className="credentials registration-form"
                     onSubmit={handleSubmit}
                 >
+
+                    <div className="registration-brand">
+
+                        <div className="registration-brand-icon">
+                            {/* Replace with your actual PlayBuddy logo if available */}
+                            <svg
+                                viewBox="0 0 64 64"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                            >
+                                <rect
+                                    width="64"
+                                    height="64"
+                                    rx="18"
+                                    fill="#103D2C"
+                                />
+
+                                <circle
+                                    cx="24"
+                                    cy="22"
+                                    r="7"
+                                    fill="#43C17C"
+                                />
+
+                                <circle
+                                    cx="41"
+                                    cy="22"
+                                    r="7"
+                                    fill="#F3FAF4"
+                                />
+
+                                <path
+                                    d="M12 48C12 38.5 17.5 33 25 33C32.5 33 37 38.5 37 48"
+                                    stroke="#43C17C"
+                                    strokeWidth="6"
+                                    strokeLinecap="round"
+                                />
+
+                                <path
+                                    d="M29 48C29 38.5 34.5 33 42 33C46 33 49.5 35 52 39"
+                                    stroke="#F3FAF4"
+                                    strokeWidth="6"
+                                    strokeLinecap="round"
+                                />
+                            </svg>
+                        </div>
+
+                        <h1 className="registration-brand-text">
+                            <span>Play</span><strong>Buddy</strong>
+                        </h1>
+
+                    </div>
+
+                    {/* Page heading */}
+                    <div className="registration-heading">
+
+                        <p className="registration-eyebrow">
+                            FIND YOUR PEOPLE
+                        </p>
+
+                        <h2>Create your account</h2>
+
+                        <p>
+                            Meet players. Discover sports. Get out and play.
+                        </p>
+
+                    </div>
+
+                    {/* Registration form */}
 
                     {/* Personal information */}
                     <section className="registration-section">
